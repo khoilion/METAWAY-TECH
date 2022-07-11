@@ -31,13 +31,13 @@ header .bg-header ul li a {
     left: 75px;
 }
 .img-partner a img {
-    width: 190px;
+    width: 150px;
     background:#fff;
     border: 1px solid ;
     padding: 25px;
 }
 .content-partner {
-    top : 4%;
+    top : 13%;
     left: 6%;
 }
 #home-page-main .pst-filter-4 {
@@ -68,7 +68,7 @@ header .bg-header ul li a {
   }
 
 #home-page-main .zoom_color img {
-    transition: transform .3s, filter 1s ease-in-out;
+    transition: transform .1s, filter 1s ease-in-out;
     filter: grayscale(80%);
   }
 
@@ -83,7 +83,34 @@ header .bg-header ul li a {
 .w-400 {
     width: 379px;
 }
-
+.prev {
+    top: 50%;
+    left: 0;
+    border: none;
+    background: none;
+    font-size: 35px;
+    color: #137faf;
+    left: 20px;
+}
+.next {
+    top: 50%;
+    right: 0;
+    border: none;
+    background: none;
+    font-size: 35px;
+    color: #137faf;
+    right: 20px;
+}
+.letter-spacing-text {
+    letter-spacing: 15px;
+}
+.w3-red, .w3-hover-red:hover {
+    color: #137faf !important;
+    background-color: #fff !important;
+}
+.w3-red, .w3-hover-red::after {
+    content: '  ';
+}
 #home-page-main .w-380 {
     width: 375px;
 }
@@ -94,7 +121,7 @@ header .bg-header ul li a {
 
 .ps-list-link::after {
     content: " ";
-    width: 88%;
+    width: 87%;
     height: 1px;
     background-color: #137faf;
     display: block;
@@ -102,7 +129,7 @@ header .bg-header ul li a {
 
 footer .ps-list-link-2::after {
     content: " ";
-    width: 69%;
+    width: 66%;
     height: 1px;
     background-color: #137faf;
     display: block;
@@ -110,7 +137,7 @@ footer .ps-list-link-2::after {
 
 footer .ps-list-link-3::after {
     content: " ";
-    width: 44%;
+    width: 41%;
     height: 1px;
     background-color: #137faf;
     display: block;
