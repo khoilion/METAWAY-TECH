@@ -139,7 +139,7 @@ footer .ps-list-link-2::after {
 
 footer .ps-list-link-3::after {
     content: " ";
-    width: 41%;
+    width: 37%;
     height: 1px;
     background-color: #137faf;
     display: block;
