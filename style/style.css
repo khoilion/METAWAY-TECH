@@ -70,6 +70,7 @@ header .bg-header ul li a {
 #home-page-main .zoom_color img {
     transition: transform .1s, filter 1s ease-in-out;
     filter: grayscale(80%);
+    box-shadow: rgb(0 0 0 / 35%) 1px 9px 10px 3px;
   }
 
 #home-page-main .zoom_color img:hover {
