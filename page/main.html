@@ -158,16 +158,16 @@
             <section class="pt-5">
                 <div class="position-relative">
                     <div class="size-conten-elemen">
-                        <h2 class="text-center">
+                        <h2 class="text-center m-0">
                             Projects
                         </h2>
-                        <div class="text-center pb-5">
-                            <button class="w3-button demo" onclick="currentDiv(1)">All</button> 
-                            <button class="w3-button demo" onclick="currentDiv(2)">Blockchain</button> 
-                            <button class="w3-button demo" onclick="currentDiv(3)">E-Commerce</button> 
-                            <button class="w3-button demo" onclick="currentDiv(4)">Education</button> 
-                            <button class="w3-button demo" onclick="currentDiv(5)">Headlthcare</button> 
-                            <button class="w3-button demo" onclick="currentDiv(6)">Others</button> 
+                        <div class="text-center pb-4 pt-4 slide-titles">
+                            <button class="w3-button demo fw-500" onclick="currentDiv(1)">All</button> 
+                            <button class="w3-button demo fw-500" onclick="currentDiv(2)">Blockchain</button> 
+                            <button class="w3-button demo fw-500" onclick="currentDiv(3)">E-Commerce</button> 
+                            <button class="w3-button demo fw-500" onclick="currentDiv(4)">Education</button> 
+                            <button class="w3-button demo fw-500" onclick="currentDiv(5)">Headlthcare</button> 
+                            <button class="w3-button demo fw-500" onclick="currentDiv(6)">Others</button> 
                         </div>
                         <div class="pb-5">
                             <div  class="mySlides">
@@ -272,11 +272,11 @@
                                         </a>
                                     </div>
                                     <div class="col-5 pt-5 ">
-                                        <p class="text-white fs-20">OUR PARTNER</p>
-                                        <h3 class="text-white fw-700 fs-40 pt-4 pb-4">
+                                        <p class="text-white fs-22">OUR PARTNER</p>
+                                        <h3 class="text-white fw-700 fs-40 pt-4 pb-4 letter-spacing-text">
                                             TRUSTED AND  SUPPORTED BY MANY
                                         </h3>
-                                        <p class="text-white">
+                                        <p class="text-white fs-22">
                                             “We work with major service providers to blockchainise conventionnak business models"
                                         </p>
                                     </div>
@@ -414,7 +414,7 @@
                             <img class="w-380 ps-1" src="/public/image/box-end-1.png" alt="">
                         </a>
                         <div class="position-absolute content-text-end">
-                            <h4 class="text-white">
+                            <h4 class="text-white fs-16">
                                 News Lorem ipsum dolor amet
                             </h4>
                             <p class="text-white">
@@ -427,7 +427,7 @@
                             <img class="w-380  ps-1" src="/public/image/box-end-2.png" alt="">
                         </a>
                         <div class="position-absolute content-text-end">
-                            <h4 class="text-white">
+                            <h4 class="text-white fs-16">
                                 News Lorem ipsum dolor amet
                             </h4>
                             <p class="text-white">
@@ -440,7 +440,7 @@
                             <img class="w-380  ps-1" src="/public/image/box-end-3.png" alt="">
                         </a>
                         <div class="position-absolute content-text-end">
-                            <h4 class="text-white">
+                            <h4 class="text-white fs-16">
                                 News Lorem ipsum dolor amet
                             </h4>
                             <p class="text-white">
@@ -455,7 +455,7 @@
                             </a>
                         </div>
                         <div class="position-absolute content-text-end">
-                            <h4 class="text-white">
+                            <h4 class="text-white fs-16">
                                 News Lorem ipsum dolor amet
                             </h4>
                             <p class="text-white">
@@ -466,34 +466,7 @@
                 </div>
             </section>
         </div>
-        <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-            
-            function plusDivs(n) {
-              showDivs(slideIndex += n);
-            }
-            
-            function currentDiv(n) {
-              showDivs(slideIndex = n);
-            }
-            
-            function showDivs(n) {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("demo");
-              if (n > x.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = x.length}
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-red", "");
-              }
-              x[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " w3-red";
-            }
-            </script>
+
         <footer class="pt-5">
             <div class="footer-main">
                 <div class="size-conten-elemen">
@@ -759,5 +732,34 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-red", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-red";
+        }
+    </script>
 </body>
 </html>
